@@ -3,6 +3,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 from PIL import Image
 
+SAVE_AS_PNG = FALSE
+
 def plot_two(img1, img2, figsize=(10, 6), titles=['', ''],
              cmap=plt.cm.gray):
     ax1 = plt.figure(figsize=figsize)
@@ -99,7 +101,7 @@ if __name__ == '__main__':
 
 
 
-        if 1 == 0:
+        if SAVE_AS_PNG:
             base_dir = 'trainset256/'
             cube_filename = base_dir + str(cube_number) + '.png'
 
