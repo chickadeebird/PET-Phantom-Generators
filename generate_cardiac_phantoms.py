@@ -5,6 +5,8 @@ from scipy.ndimage.interpolation import rotate
 from scipy.ndimage import median_filter
 import math
 
+SAVE_AS_PNG = FALSE
+
 def plot_two(img1, img2, figsize=(10, 6), titles=['', ''],
              cmap=plt.cm.gray):
     ax1 = plt.figure(figsize=figsize)
